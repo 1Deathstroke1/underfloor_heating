@@ -1,0 +1,80 @@
+.advantages__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.advantages__title {
+    width: var(--width-block);
+    max-width: 480px;
+}
+
+.advantages__list {
+    width: var(--width-block);
+}
+
+.list-reset {}
+
+.advantages__item {
+    background-image: url(../img/Star.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-left: 32px;
+    font-size: 24px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.advantages__item:last-child {
+    margin-bottom: 0;
+}
+
+@media(max-width:1240px) {
+    .advantages__container {
+        padding: 0 30px;
+    }
+
+    .advantages__title {
+        max-width: 330px;
+    }
+
+    .advantages__item {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:920px) {
+    .advantages__container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .advantages__title {
+        max-width: 440px;
+        width: 100%;
+    }
+
+    .advantages__list {
+        width: 100%;
+    }
+
+    .advantages__item {
+        font-size: 16;
+        margin-bottom: 16px;
+    }
+}
+
+@media(max-width:560px) {
+    .advantages__container {
+        padding: 0 20px;
+    }
+
+    .advantages__item {
+        font-size: 14;
+        padding-left: 24px;
+    }
+}
