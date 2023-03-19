@@ -38,6 +38,11 @@ ul {
 .link {
     text-decoration: none;
     color: inherit;
+    transition: color 0.2s ease-in-out;
+}
+
+.link:hover {
+    color: #e4b50d;
 }
 
 .image {
@@ -53,6 +58,38 @@ ul {
     color: #232020;
     text-transform: uppercase;
     background-color: #FFC700;
+    border: 1px solid #FFC700;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #FFD952;
+    border-color: #FFD952;
+}
+
+.button_o {
+    background-color: transparent;
+    border: 1px solid #232020;
+}
+
+.button:focus-visible {
+    border-color: #9e7b00;
+}
+
+.button_o:focus-visible {
+    border: 1px solid #FFC700;
+}
+
+.button:active {
+    transform: translate(2px, 2px);
+}
+
+.button:disabled {
+    pointer-events: none;
+    background-color: #E0E0E0;
+    border-color: #E0E0E0;
+    color: #898989;
+    cursor: default;
 }
 
 .section-offset {

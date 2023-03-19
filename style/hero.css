@@ -73,6 +73,15 @@
     padding: 0;
 }
 
+.hero__slider-btn:hover {
+    background-color: #FFD952;
+}
+
+.hero__slider-btn:active {
+    background-color: #9e7b00;
+}
+
+
 .hero__slider-btn_next {
     transform: rotate(180deg);
 }
