@@ -35,6 +35,10 @@
     margin-bottom: 32px;
 }
 
+.hero__link {
+    text-decoration: none;
+}
+
 
 
 .hero__image {
